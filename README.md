@@ -24,7 +24,7 @@ A React-based product catalog application that allows users to browse products, 
 ## Installation
 
 1.  GitHub repository:
-    ``
+    `https://github.com/Amisha73/Internshala-project-shoppy-globe-`
 
 2.  Create a New React App:
     `npm create vite@latest shoppy-globe --template react`
