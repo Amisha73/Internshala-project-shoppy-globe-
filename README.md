@@ -69,6 +69,8 @@ shoppyGlobe/
 │ │ ├── LoginSignup.jsx
 │ │ ├── Header.jsx
 │ │ ├── Footer.jsx
+│ │ ├── CheckOutPage.jsx
+│ │ ├── SearchResult.jsx
 │ ├── hooks/
 │ │ ├── useFetchProducts.jsx
 │ ├── redux/
@@ -77,6 +79,7 @@ shoppyGlobe/
 │ │ └── store.jsx
 │ ├── App.jsx
 │ ├── main.jsx
+│ ├── App.css
 │ ├── index.css
 │ └── ...
 ├── package.json
