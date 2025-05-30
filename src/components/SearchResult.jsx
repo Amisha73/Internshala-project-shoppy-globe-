@@ -15,16 +15,18 @@ const SearchResults = () => {
   // Extract the 'query' parameter from the URL
   const query = new URLSearchParams(location.search).get("query");
 
-  //  useEffect Hook - Runs whenever the `query` changes.
   //  Filters the product list to include only those whose titles match the query.
+   // useEffect Hook - Runs whenever the `query` or `products` changes.
   useEffect(() => {
-    if (query) {
+    if (query && products.length > 0) { // Check if products are available
       const filteredProducts = products.filter((product) =>
         product.title.toLowerCase().includes(query.toLowerCase())
       );
       setResults(filteredProducts); // Update state with matching results
+    } else {
+      setResults([]); // Reset results if no query or products are available
     }
-  }, [query]);
+  }, [query, products]); // Add products to the dependency array
 
   return (
     <div className="container p-4">
